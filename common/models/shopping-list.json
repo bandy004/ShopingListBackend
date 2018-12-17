@@ -1,0 +1,40 @@
+{
+  "name": "ShoppingList",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "TotalCost": {
+      "type": "number",
+      "default": 0
+    },
+    "CompletionPercentage": {
+      "type": "number",
+      "default": 0
+    },
+    "CompletedItems": {
+      "type": "number",
+      "default": 0
+    },
+    "PendingItems": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "items": {
+      "type": "hasMany",
+      "model": "Item",
+      "foreignKey": "listId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

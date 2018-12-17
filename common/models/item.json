@@ -1,0 +1,28 @@
+{
+  "name": "Item",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Cost": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shoppingList": {
+      "type": "belongsTo",
+      "model": "ShoppingList",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

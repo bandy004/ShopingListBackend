@@ -1,0 +1,17 @@
+{
+  "ids": {
+    "Item": 10,
+    "ShoppingList": 3
+  },
+  "models": {
+    "Item": {
+      "1": "{\"Name\":\"Bread-2\",\"Cost\":2.3,\"listId\":2,\"id\":1,\"shoppingListId\":2}",
+      "2": "{\"Name\":\"Bread\",\"Cost\":1.75,\"listId\":2,\"shoppingListId\":2,\"id\":2}",
+      "8": "{\"Name\":\"Milk\",\"Cost\":0,\"listId\":2,\"shoppingListId\":2,\"id\":8}",
+      "9": "{\"Name\":\"Rice\",\"Cost\":0,\"listId\":2,\"shoppingListId\":2,\"id\":9}"
+    },
+    "ShoppingList": {
+      "2": "{\"Name\":\"List-1\",\"TotalCost\":0,\"CompletionPercentage\":0,\"CompletedItems\":0,\"PendingItems\":0,\"id\":2}"
+    }
+  }
+}
